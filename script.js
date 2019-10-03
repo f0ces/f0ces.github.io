@@ -63,8 +63,8 @@ $(document).ready(function() {
     scrollBar: true,
     responsiveWidth: 400,
     navigation: true,
-    navigationTooltips: ['home', 'about', 'portfolio', 'contact', 'connect'],
-    anchors: ['home', 'about', 'portfolio', 'contact', 'connect'],
+    navigationTooltips: ['home', 'about', 'portfolio', 'connect'],
+    anchors: ['home', 'about', 'portfolio', 'connect'],
     menu: '#myMenu',
     fitToSection: false,
 
