@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Ubuntu');
+//colors
+//black for background
+$primary: rgba(15%, 15%, 17%, 0.85), rgba(15%, 15%, 17%, 0.95);
+//red for branding box
+$accent: #EF4135;
+//white for right triangle
+$neutral-white-background: rgba(100%, 100%, 100%, 0.8), rgba(100%, 100%, 100%, 0.9);
+$neutral-white: #ffffff;
+//gray for presents-text
+$neutral-gray: #A19E9F;
+//pink
+$background-color: #D3DBF2;
+//fonts
+$primary-font: "Ubuntu";
+$secondary-font: "Open Sans Condensed";
+$large-font-size: 48px;a
+$small-font-size: 16px;
+$mobile-large-font-size: 24px;
+$mobile-small-font-size: 8px;
+$mobile-extra-small-font-size: 6px;
+$thick-font-weight: 700;
+$medium-font-weight: 300;
+$uppercase-transform: uppercase;
+//shapes
+$triangle: polygon(100% 0, 0% 100%, 100% 100%);
+//start
+html,body{
+  height: 100%;
+  background: $background-color;
+}
+.webpage{
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 3%;
+  width: 600px;
+  height: 420px;
+  background: linear-gradient(
+      $primary
+    ),  url("https://images.pexels.com/photos/70232/pexels-photo-70232.jpeg?h=350&auto=compress");
+  z-index: 1;
+  -webkit-box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+}
+.right-triangle{
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(
+      $neutral-white-background
+    ),  url("https://images.pexels.com/photos/114907/pexels-photo-114907.jpeg?h=350&auto=compress");
+  -webkit-clip-path: $triangle;
+clip-path: $triangle;
+  
+}
+.red-brand-box{
+  position: absolute;
+  width: 8%;
+  height: 10%;
+  top: 10%;
+  left: 10%;
+  background: $accent;
+  z-index: 1;
+  
+}
+.white-brand-box{
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 15%;
+  left: 15%;
+  border: solid 6px $neutral-white;
+  z-index: 2;
+}
+.presents-text{
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-family: $secondary-font;
+  color: $neutral-gray;
+  font-size: $small-font-size;
+  font-weight: $medium-font-weight;
+}
+.title{
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-family: $primary-font;
+  font-size: $large-font-size;
+  font-weight: $thick-font-weight;
+  color: $neutral-white;
+  text-transform: $uppercase-transform;
+}
+.cta-button{
+  position: absolute;
+  width: 25%;
+  height: 10%;
+  bottom: 25%;
+  left: 10%;
+  background: $accent;
+  border-radius: 0%;
+  border: none;
+  padding: 10;
+  font-family: $primary-font;
+  font-size: $small-font-size;
+  font-weight: $thick-font-weight;
+  color: $neutral-white;
+  text-transform: $uppercase-transform;
+}
+//mobile responsive
+@media all and (max-width: 600px) {
+  .webpage{
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    width: 300px;
+    height: 200px;
+    z-index: 1;
+  }
+  .white-brand-box{
+  border: solid 3px $neutral-white;
+
+  }
+  .presents-text{
+    font-size: $mobile-small-font-size;
+  }
+    .title{
+    font-size: $mobile-large-font-size;
+  }
+  .cta-button{
+    font-size: $mobile-extra-small-font-size;
+  }
+  .branding-logo{
+  border: solid 3px $neutral-white;
+  }
+}
