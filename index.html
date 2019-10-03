@@ -1,9 +1,18 @@
 <html>
-    <head>
-       <title>
-           <marquee>
-               FOCES 2019-2020
-           </marquee>
-       </title>
-    </head>
+
+<head>
+    <title>
+        FOCES 2019-2020
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        (function titleMarquee() {
+            document.title = document.title.substring(1) + document.title.substring(0, 1);
+            setTimeout(titleMarquee, 200);
+        })();
+    </script>
+</head>
+<body>
+    hello there
+</body>
 </html>
