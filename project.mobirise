@@ -102,10 +102,10 @@
               "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
             },
             "overlay": true,
-            "overlayColor": "#ffffff",
-            "overlayOpacity": "0.8"
+            "overlayColor": "#dddddd",
+            "overlayOpacity": "0.7"
           },
-          "title": "<b>DARE.DEVELOP.DOMINATE</b>",
+          "title": "<b>DARE.</b><br><b>DEVELOP.</b><br><b>DOMINATE.</b>",
           "text": "Forum Of Computer Engineering Students (FOCES) is the official forum of the Computer Science and Engineering students of CEC.All CSE students are compulsory members of this forum .Its the platform where students can share , implement and develop their productive ideas.",
           "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-info\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">Join Us</a> ",
           "alias": "purity/components",
@@ -116,7 +116,8 @@
           "_anchor": "header4-a",
           "_styles": {
             "H1": {
-              "color": "#0275d8"
+              "color": "#0275d8",
+              "text-align": "left"
             },
             "P": {
               "text-align": "left",
@@ -124,7 +125,9 @@
               "googleLink": "https://fonts.googleapis.com/css?family=Oswald:400,300,700"
             },
             "B": {
-              "font-size": "48px"
+              "font-size": "46px",
+              "font-family": "'Roboto Condensed', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700"
             }
           }
         },
