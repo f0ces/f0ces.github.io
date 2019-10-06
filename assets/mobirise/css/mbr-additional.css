@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,700);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,700);
 
 
@@ -26,14 +26,15 @@
 #header4-a H1 {
   color: #0275d8;
   text-align: left;
+  font-size: 40px;
 }
 #header4-a P {
   text-align: left;
   font-family: 'Oswald', sans-serif;
 }
 #header4-a B {
-  font-size: 46px;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 36px;
+  font-family: 'Bitter', serif;
 }
 #msg-box3-4 .mbr-header .mbr-header__text {
   text-align: center;
@@ -118,24 +119,4 @@
 }
 #msg-box4-g .mbr-section-title B {
   font-family: 'Ubuntu', sans-serif;
-}
-#dropdown-menu-k .hide-buttons [data-button] {
-  display: none !important;
-}
-#dropdown-menu-k .nav .link,
-#dropdown-menu-k .dropdown-item {
-  font-size: 1em;
-  color: #000000;
-}
-#dropdown-menu-k .navbar,
-#dropdown-menu-k .dropdown-menu {
-  background: #ffffff;
-}
-#dropdown-menu-k .dropdown-menu .dropdown-toggle[aria-expanded="true"],
-#dropdown-menu-k .dropdown-menu a:hover,
-#dropdown-menu-k .dropdown-menu a:focus {
-  background: #f5f5f5;
-}
-#dropdown-menu-k .navbar-toggler {
-  color: #000000;
 }
