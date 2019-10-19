@@ -26,7 +26,6 @@
 #header4-a H1 {
   color: #0275d8;
   text-align: left;
-  font-size: 36px;
 }
 #header4-a P {
   text-align: left;
@@ -82,6 +81,7 @@
 
 
 
+
 #dropdown-menu-a .hide-buttons [data-button] {
   display: none !important;
 }
@@ -119,4 +119,47 @@
 }
 #msg-box4-g .mbr-section-title B {
   font-family: 'Ubuntu', sans-serif;
+}
+#msg-box4-o .mbr-section-title B {
+  font-family: 'Ubuntu', sans-serif;
+}
+#dropdown-menu-m .hide-buttons [data-button] {
+  display: none !important;
+}
+#dropdown-menu-m .nav .link,
+#dropdown-menu-m .dropdown-item {
+  font-size: 1em;
+  color: #000000;
+}
+#dropdown-menu-m .navbar,
+#dropdown-menu-m .dropdown-menu {
+  background: #ffffff;
+}
+#dropdown-menu-m .dropdown-menu .dropdown-toggle[aria-expanded="true"],
+#dropdown-menu-m .dropdown-menu a:hover,
+#dropdown-menu-m .dropdown-menu a:focus {
+  background: #f5f5f5;
+}
+#dropdown-menu-m .navbar-toggler {
+  color: #000000;
+}
+#dropdown-menu-p .hide-buttons [data-button] {
+  display: none !important;
+}
+#dropdown-menu-p .nav .link,
+#dropdown-menu-p .dropdown-item {
+  font-size: 1em;
+  color: #000000;
+}
+#dropdown-menu-p .navbar,
+#dropdown-menu-p .dropdown-menu {
+  background: #ffffff;
+}
+#dropdown-menu-p .dropdown-menu .dropdown-toggle[aria-expanded="true"],
+#dropdown-menu-p .dropdown-menu a:hover,
+#dropdown-menu-p .dropdown-menu a:focus {
+  background: #f5f5f5;
+}
+#dropdown-menu-p .navbar-toggler {
+  color: #000000;
 }
