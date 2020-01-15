@@ -1,0 +1,93 @@
+/* FONT FILES */
+@font-face {
+    font-family: "Open Sans";
+    src: url('../fonts/OpenSans-Bold.ttf');
+    font-weight: bolder;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-SemiBoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    top: 0;
+    position: fixed;
+    position: -webkit-sticky;
+
+    background: none;
+}
+
+nav .logo {
+    padding: 50px;
+}
+
+nav .menu {
+    padding: 50px;
+}
+
+nav .menu ol {
+    list-style: none;
+    display: flex;
+}
+
+nav .menu ol li a {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+main .hero {
+    padding: 50px;
+}
+
+main .hero h1 {
+    font-size: 3.5em;
+    font-weight: bolder;
+}
+
+main .hero h2 {
+    font-size: 3em;
+    color: #8F8F8F;
+}
+
+/* @media only screen and (min-width: 769px) {
+    
+} */
+
+@media only screen and (max-width: 768px) {
+
+}
