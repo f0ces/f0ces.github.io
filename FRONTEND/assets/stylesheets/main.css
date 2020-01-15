@@ -102,6 +102,44 @@ main .hero h2 {
     color: #8F8F8F;
 }
 
+section.event {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.event .event-content {
+    height: 100%;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding-right:50px ;
+    text-align: right;
+}
+section.event .event-content h2 {
+    color: #6942BC;
+    font-family: "Open Sans Bold";
+    font-size: 4em; 
+}
+
+section.event .event-content .event{
+    padding: 20px;
+    font-size: 1.5em;
+    color: #8F8F8F;
+}
+section.event .event-content .event p {
+    font-family: "Open Sans Bold";
+}
+
+section.event .event-img {
+    height: 100%;
+    width: 40vw;
+    background-color: #6942BC;
+}
+
 section.about {
     height: 100vh;
     width: 100%;
@@ -168,7 +206,7 @@ footer .widget {
     font-style: italic;
 }
 
-footer .highlight {
+.highlight {
     color: black;
     font-family: "Open Sans Bold";
     font-weight: bolder;
