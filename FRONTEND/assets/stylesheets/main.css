@@ -1,28 +1,30 @@
 /* FONT FILES */
 @font-face {
     font-family: "Open Sans";
-    src: url('../fonts/OpenSans-Bold.ttf');
+    src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url('../fonts/OpenSans-Bold.ttf') format("truetype");
     font-weight: bolder;
     font-style: normal;
 }
 @font-face {
     font-family: "Open Sans";
-    src: url("../fonts/OpenSans-Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Open Sans";
-    src: url("../fonts/OpenSans-SemiBoldItalic.ttf");
-    font-weight: bold;
+    src: url("../fonts/OpenSans-SemiBoldItalic.ttf") format("truetype");
+    font-weight: bold; 
     font-style: italic;
 }
+
+
 
 * {
     padding: 0;
     margin: 0;
     outline: none;
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -32,10 +34,11 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 
     top: 0;
-    position: fixed;
-    position: -webkit-sticky;
+    /* position: fixed;
+    position: -webkit-sticky; */
 
     background: none;
 }
@@ -45,7 +48,7 @@ nav .logo {
 }
 
 nav .menu {
-    padding: 50px;
+    padding: 35px;
 }
 
 nav .menu ol {
@@ -53,18 +56,31 @@ nav .menu ol {
     display: flex;
 }
 
-nav .menu ol li a {
+nav .menu ol li {
     padding: 15px;
+}
+
+nav .menu ol li a {
     text-decoration: none;
     color: black;
+    cursor: pointer;
 
+    font-family: "Open Sans Bold";
     font-size: 1.1em;
     font-weight: bolder;
+}
+
+nav .menu ol li.active {
+    background: url("../images/bar.png");
 }
 
 main {
     height: 100vh;
     width: 100%;
+    position: relative;
+    top: -20vh;
+    z-index: -1;
+
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -75,15 +91,88 @@ main .hero {
 }
 
 main .hero h1 {
+    font-family: "Open Sans Bold";
     font-size: 3.5em;
     font-weight: bolder;
 }
 
 main .hero h2 {
+    /* font-family: "Open Sans Bold"; */
     font-size: 3em;
     color: #8F8F8F;
 }
 
+section.about {
+    height: 100vh;
+    width: 100%;
+    background: #202020;
+    color: #FCFCFC;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.about h2 {
+    color: #6942BC;
+
+    font-family: "Open Sans Bold";
+    font-size: 3em;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+section.about p {
+    padding: 15px 80px 15px 80px;
+
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+footer {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #6942BC;
+    color: #FCFCFC;
+}
+
+footer .footer-content {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+footer .footer-content .address {
+    padding-left: 50px;    
+}
+
+footer .footer-content .contact {
+    padding-right: 50px;
+    text-align: right;
+}
+
+footer highlight-2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+footer .widget {
+    padding-top: 80px;
+    padding-left: 50px;
+    font-style: italic;
+}
+
+footer .highlight {
+    color: black;
+    font-family: "Open Sans Bold";
+    font-weight: bolder;
+}
 /* @media only screen and (min-width: 769px) {
     
 } */
