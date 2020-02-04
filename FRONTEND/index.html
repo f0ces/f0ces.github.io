@@ -5,51 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FOCES</title>
-
-    <!-- STYLESHEETS -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/stylesheets/main.css">
     <link rel="stylesheet" href="./assets/stylesheets/animation.css">
+    <title>Foces</title>
 </head>
 
 <body>
-    <nav>
-        <div class="logo"><a href="#"><img src="./assets/images/logo.png" alt="FOCES"></a></div>
+
+    <div class="header">
+
+        <div class="navbar-toggle" id="js-navbar-toggle"><img src=" ./assets/images/menu.png"></div>
+
+        <div> <img class="logo" src=" ./assets/images/logo.png"> </div>
+
+
+
         <div class="menu">
             <ol>
-                <li class="active"><a href="#">Home</a></li>
+                <li class="menu"><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#event">Events</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ol>
         </div>
-    </nav>
 
-    <main>
-        <div class="hero">
-            <h1 class="typewriter">Forum of Computer Science Students</h1>
-            <h2 class="fadein">Dare. Develop. Dominate.</h2>
-        </div>
-    </main>
+        <div id="mobile">
+            <ol>
+                <li class="menu"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#event">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
 
-    <section id="event" class="event">
-        <div class="event-content">
-            <h2>Upcoming Sessions</h2>
-            <div class="event">
-                <p><span class="highlight">C Programming Session</span>
-                    <br> Room No. 312 
-                    <br> 22.02.2019
-                </p>
-            </div>
-            <div class="event">
-                <p><span class="highlight">HTML Session</span>
-                    <br> Room No. 312
-                    <br> 12.02.2019
-                </p>
+        </div>
+
+
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="maintext typewriter"> Forum of Computer Science Student</div>
+        <div class="maintext2 fadein">Dare.Develop.Dominate.</div>
+
+    </div>
+
+    <div class="container2">
+        <div class="box1">
+            <div class="box1text">
+
+                <div>
+                    <h2>Upcoming Sessions<br></h2>
+                </div>
+                <div class="highlight">C Programming Session <br></div>
+                <div class="room-no">Room No. 312 <br></div>
+                <div class="room-no">22.02.2019</div>
+
+                <div class="highlight">HTML Session <br></div>
+                <div class="room-no">Room No. 312 <br></div>
+                <div class="room-no">12.02.2019</div>
+                <div class="highlight">PHP Session <br></div>
+                <div class="room-no">Room No. 452 <br></div>
+                <div class="room-no">12.02.2019</div>
+
             </div>
         </div>
-        <div class="event-img"></div>
-    </section>
+        <div class="box2">
+
+        </div>
+
+
+    </div>
 
     <section id="about" class="about">
         <h2>About Us</h2>
@@ -66,24 +92,27 @@
             implement software projects for the students in the Computer Science & Engineering Dept.</p>
     </section>
 
+
     <footer id="contact">
         <div class="footer-content">
             <div class="address"> <span class="highlight">Contact Us</span><br>College of Engineering
                 <span class="highlight-2">
-                Chengannur,<br>Alapuzha District<br>
-                Kerala, PIN 689121</div>
-                </span>
+                    Chengannur,<br>Alapuzha District<br>
+                    Kerala, PIN 689121</div>
+            </span>
             <div class="contact"> <span class="highlight">E-mail</span><br>
                 <span class="highlight-2">
-                principal@ceconline.edu
-                <br><br>
-                <span class="highlight">Phone Number</span><br>
-                +91-479-2165706, 2454125,<br>
-                2456046, 2451424</div>
-                </span>
-            </div>
+                    principal@ceconline.edu
+                    <br><br>
+                    <span class="highlight">Phone Number</span><br>
+                    +91-479-2165706, 2454125,<br>
+                    2456046, 2451424</div>
+            </span>
+        </div>
         <div class="widget">Designed and Developed By <span class="highlight">FOCES</span></div>
     </footer>
+
+    <script src="./assets/scripts/navbar.js"></script>
 </body>
 
 </html>

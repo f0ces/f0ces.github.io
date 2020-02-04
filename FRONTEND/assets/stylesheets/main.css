@@ -1,146 +1,129 @@
-/* FONT FILES */
 @font-face {
     font-family: "Open Sans";
-    src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+    src: url("./../fonts/OpenSans-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Open Sans Bold";
-    src: url('../fonts/OpenSans-Bold.ttf') format("truetype");
+    src: url('./../fonts/OpenSans-Bold.ttf') format("truetype");
     font-weight: bolder;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Open Sans";
-    src: url("../fonts/OpenSans-SemiBoldItalic.ttf") format("truetype");
-    font-weight: bold; 
+    src: url("./../fonts/OpenSans-SemiBoldItalic.ttf") format("truetype");
+    font-weight: bold;
     font-style: italic;
 }
 
-
-
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     outline: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     font-style: normal;
 }
 
-nav {
-    height: 20vh;
-    width: 100%;
+
+.mob {
+    display: none;
+}
+
+#mobile {
+    display: none;
+}
+
+.header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    z-index: 1;
-
-    top: 0;
-    /* position: fixed;
-    position: -webkit-sticky; */
-
-    background: none;
+    background-color: #ffff;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
 }
 
-nav .logo {
-    padding: 50px;
+.header .navbar-toggle {
+    display: none;
 }
 
-nav .menu {
-    padding: 35px;
+.logo {
+    padding: 30px;
 }
 
-nav .menu ol {
-    list-style: none;
+
+
+.menu ol {
     display: flex;
 }
 
-nav .menu ol li {
-    padding: 15px;
+.menu ol li {
+    display: flex;
+    list-style: none;
+    padding: 25px;
 }
 
-nav .menu ol li a {
+.menu ol li a {
     text-decoration: none;
     color: black;
     cursor: pointer;
-
     font-family: "Open Sans Bold";
-    font-size: 1.1em;
+    font-size: 1.5em;
     font-weight: bolder;
 }
 
-nav .menu ol li.active {
-    background: url("../images/bar.png");
-}
 
-main {
+
+.container {
     height: 100vh;
-    width: 100%;
-    position: relative;
-    top: -20vh;
-    z-index: -1;
-
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-}
-
-main .hero {
-    padding: 50px;
-}
-
-main .hero h1 {
-    font-family: "Open Sans Bold";
-    font-size: 3.5em;
-    font-weight: bolder;
-}
-
-main .hero h2 {
-    /* font-family: "Open Sans Bold"; */
-    font-size: 3em;
-    color: #8F8F8F;
-}
-
-section.event {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-section.event .event-content {
-    height: 100%;
-    width: 60vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    padding-right:50px ;
-    text-align: right;
-}
-section.event .event-content h2 {
-    color: #6942BC;
-    font-family: "Open Sans Bold";
-    font-size: 4em; 
 }
 
-section.event .event-content .event{
-    padding: 20px;
-    font-size: 1.5em;
+.maintext {
+
+    margin-top: -20vh;
+    font-family: "Open Sans Bold";
+    font-size: 3.5em;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    font-weight: bolder;
+    color: #303030;
+    width: 62%;
+}
+
+.link {
+    border-bottom: 3px solid #5726BE;
+}
+
+.maintext2 {
+    padding-left: 50px;
+    font-size: 3rem;
     color: #8F8F8F;
 }
-section.event .event-content .event p {
-    font-family: "Open Sans Bold";
+
+.container2 {
+    height: 100vh;
+    display: flex;
+
 }
 
-section.event .event-img {
-    height: 100%;
+.box1 {
+    width: 60vw;
+    background-color: #FCFCFC;
+}
+
+.box2 {
     width: 40vw;
-    background-color: #6942BC;
+    background-color: #5726BE;
 }
 
-section.about {
+.about {
     height: 100vh;
     width: 100%;
     background: #202020;
@@ -152,7 +135,44 @@ section.about {
     align-items: center;
 }
 
-section.about h2 {
+.box1text {
+    font-family: "Open Sans Bold";
+    padding: 120px;
+    font-size: 1.5em;
+
+}
+
+.container2 .box1 .box1text .highlight {
+    color: #6942BC;
+    font-family: "Open Sans Bold";
+    font-size: 2em;
+}
+
+.container2 .box1 .box1text h2 {
+    color: #6942BC;
+    font-family: "Open Sans Bold";
+    font-size: 3em;
+}
+
+.container2 .box1 .box1text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.container2 .box1 .box1text .room-no {
+    padding: 15px 80px 15px 80px;
+
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.about h2 {
     color: #6942BC;
 
     font-family: "Open Sans Bold";
@@ -161,14 +181,15 @@ section.about h2 {
     font-style: normal;
 }
 
-section.about p {
+.about p {
     padding: 15px 80px 15px 80px;
 
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
     font-style: italic;
     text-align: center;
 }
+
 
 footer {
     height: 50vh;
@@ -185,8 +206,9 @@ footer .footer-content {
     justify-content: space-between;
     /* align-items: center; */
 }
+
 footer .footer-content .address {
-    padding-left: 50px;    
+    padding-left: 50px;
 }
 
 footer .footer-content .contact {
@@ -206,15 +228,175 @@ footer .widget {
     font-style: italic;
 }
 
-.highlight {
-    color: black;
-    font-family: "Open Sans Bold";
-    font-weight: bolder;
-}
-/* @media only screen and (min-width: 769px) {
-    
-} */
+
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
+    .header .navbar-toggle {
+        display: block;
+        height: 40px;
+        padding: 20px;
+        z-index: 2;
+    }
+
+    .header .menu {
+        display: none;
+    }
+
+    .logo img {
+        padding: 6px;
+        margin-right: 20px;
+    }
+
+
+    .container {
+        height: 80vh;
+    }
+
+    .container .maintext {
+        font-family: "Open Sans Bold";
+        font-size: 2em;
+        margin-top: -40vh;
+        font-weight: bolder;
+    }
+
+
+    .container .maintext2 {
+        padding-top: 25px;
+        font-size: 1.5rem;
+        color: #8F8F8F;
+    }
+
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .box1 {
+        height: 100vh;
+        width: 100%;
+        background-color: #FCFCFC;
+    }
+
+    .box2 {
+        width: 100%;
+        height: 100vh;
+        background-color: #5726BE;
+    }
+
+
+    .box1text {
+        font-family: "Open Sans Bold";
+        padding: 20px;
+        font-size: 1em;
+
+    }
+
+    .container2 .box1 .box1text .highlight {
+        color: #6942BC;
+        font-family: "Open Sans Bold";
+        font-size: 1em;
+    }
+
+    .container2 .box1 .box1text h2 {
+        color: #6942BC;
+        font-family: "Open Sans Bold";
+        font-size: 1.5em;
+    }
+
+    .container2 .box1 .box1text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-between;
+    }
+
+    .container2 .box1 .box1text .room-no {
+        padding: 7px 40px 7px 40px;
+        font-size: 1em;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+
+    .about {
+        height: 100vh;
+    }
+
+    .about h2 {
+        color: #6942BC;
+
+        font-family: "Open Sans Bold";
+        font-size: 1.5em;
+        font-weight: bolder;
+        font-style: normal;
+    }
+
+    .about p {
+        padding: 8px;
+
+        font-size: 1em;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    #contact {
+        height: 40vh;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+
+    .mobile {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2%;
+        font-size: 1.4em;
+    }
+
+    #mobile ol li {
+        text-align: center;
+        margin: 60px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4%;
+        font-size: 1.4em;
+    }
+
+
+
+    #mobile ol li a {
+        text-decoration: none;
+        list-style: none;
+        color: black;
+    }
+
+
+
+
+
+
 
 }

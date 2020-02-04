@@ -2,12 +2,12 @@
   overflow: hidden;
   border-right: 0.15em solid #6942bc;
   white-space: nowrap;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 .fadein {
-    opacity: 1;
+  opacity: 1;
   animation-name: fadeIn;
   animation-duration: 5.5s;
   animation-timing-function: ease;
@@ -15,12 +15,13 @@
 
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* The typing effect */
@@ -28,17 +29,20 @@
   from {
     width: 0;
   }
+
   to {
-    width: 100%;
+    width: 62%;
   }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: #6942bc;
   }
