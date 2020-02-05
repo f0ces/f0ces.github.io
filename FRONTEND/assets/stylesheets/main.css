@@ -86,15 +86,14 @@
 }
 
 .maintext {
-
     margin-top: -20vh;
     font-family: "Open Sans Bold";
     font-size: 3.5em;
-    padding-left: 50px;
+
     padding-bottom: 15px;
     font-weight: bolder;
     color: #303030;
-    width: 62%;
+    width: 100%;
 }
 
 .link {
@@ -102,7 +101,7 @@
 }
 
 .maintext2 {
-    padding-left: 50px;
+
     font-size: 3rem;
     color: #8F8F8F;
 }
@@ -114,11 +113,14 @@
 }
 
 .box1 {
+    height: 100vh;
     width: 60vw;
     background-color: #FCFCFC;
 }
 
 .box2 {
+
+    height: 100vh;
     width: 40vw;
     background-color: #5726BE;
 }
@@ -135,23 +137,69 @@
     align-items: center;
 }
 
-.box1text {
-    font-family: "Open Sans Bold";
-    padding: 120px;
-    font-size: 1.5em;
+.member {
+    background-color: #FCFCFC;
+    padding: 10%;
+    width: 100%;
+}
 
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px 100px;
+
+}
+
+.member h2 {
+    text-align: center;
+    font-family: "Open Sans Bold";
+    font-size: 2em;
+    padding: 2%;
+}
+
+.tm img {
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    border: solid 5px #303030;
+}
+
+.tm .name {
+    padding: 20px;
+    margin-left: -24%;
+    font-family: "Open Sans Bold";
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.tm .designation {
+    margin-left: -24%;
+    font-family: "Open Sans Bold";
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.container2 .box1.box1text {
+    font-family: "Open Sans Bold";
+    font-size: 1.4em;
+    display: flex;
+    justify-content: space-between;
 }
 
 .container2 .box1 .box1text .highlight {
     color: #6942BC;
     font-family: "Open Sans Bold";
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .container2 .box1 .box1text h2 {
     color: #6942BC;
     font-family: "Open Sans Bold";
-    font-size: 3em;
+    font-size: 2em;
+    padding: 50px;
 }
 
 .container2 .box1 .box1text {
@@ -163,9 +211,8 @@
 }
 
 .container2 .box1 .box1text .room-no {
-    padding: 15px 80px 15px 80px;
-
-    font-size: 1.2em;
+    padding: 10px 40px 15px 40px;
+    font-size: 1.1em;
     font-weight: bold;
     font-style: italic;
     text-align: center;
@@ -190,21 +237,22 @@
     text-align: center;
 }
 
-
 footer {
-    height: 50vh;
-    width: 100%;
+    color: #FCFCFC;
+    font-size: 1.4em;
+    background-color: #6942BC;
+    height: fit-content;
+}
+
+.main_footer {
     display: flex;
     flex-direction: column;
-    background-color: #6942BC;
-    color: #FCFCFC;
 }
 
 footer .footer-content {
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
 }
 
 footer .footer-content .address {
@@ -216,18 +264,26 @@ footer .footer-content .contact {
     text-align: right;
 }
 
-footer highlight-2 {
+footer .highlight {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
+    margin-left: 20px;
 }
 
 footer .widget {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
     padding-top: 80px;
-    padding-left: 50px;
+    padding-left: 30px;
     font-style: italic;
+    font-size: 0.9em;
 }
 
+.fa {
+    color: black;
+}
 
 
 
@@ -238,8 +294,8 @@ footer .widget {
 @media only screen and (max-width: 768px) {
     .header .navbar-toggle {
         display: block;
-        height: 40px;
-        padding: 20px;
+        height: 35px;
+        padding: 10px;
         z-index: 2;
     }
 
@@ -254,23 +310,23 @@ footer .widget {
 
 
     .container {
-        height: 80vh;
+        height: 100vh;
     }
 
     .container .maintext {
         font-family: "Open Sans Bold";
-        font-size: 2em;
-        margin-top: -40vh;
+        font-size: 1.7em;
+        margin-top: -10vh;
         font-weight: bolder;
+        padding: 2%;
     }
-
 
     .container .maintext2 {
         padding-top: 25px;
         font-size: 1.5rem;
         color: #8F8F8F;
+        padding: 2%;
     }
-
 
     .container2 {
         display: flex;
@@ -329,6 +385,7 @@ footer .widget {
 
     .about {
         height: 100vh;
+        width: 100%;
     }
 
     .about h2 {
@@ -341,16 +398,16 @@ footer .widget {
     }
 
     .about p {
-        padding: 8px;
+        padding: 4px;
 
-        font-size: 1em;
+        font-size: 1.2em;
         font-weight: bold;
         font-style: italic;
         text-align: center;
     }
 
     #contact {
-        height: 40vh;
+        height: fit-content;
     }
 
     .navbar-toggle {
@@ -371,7 +428,13 @@ footer .widget {
         justify-content: space-between;
         align-items: center;
         padding: 2%;
-        font-size: 1.4em;
+        font-size: 1.5em;
+    }
+
+    #contact .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
     }
 
     #mobile ol li {
@@ -382,7 +445,7 @@ footer .widget {
         justify-content: space-between;
         align-items: center;
         padding: 4%;
-        font-size: 1.4em;
+        font-size: 1.5em;
     }
 
 
@@ -394,9 +457,43 @@ footer .widget {
     }
 
 
+    .team {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+
+    }
+
+    .tm img {
+        height: 18rem;
+        width: 18rem;
+        border-radius: 50%;
+        border: solid 2px #303030;
+    }
+
+    .tm .name {
+        padding: 20px;
+        margin-left: -10%;
+        font-family: "Open Sans Bold";
+        text-align: center;
+        font-size: 1.2rem;
+    }
 
 
+    .tm .designation {
+        margin-left: -10%;
+        font-family: "Open Sans Bold";
+        text-align: center;
+        font-size: 1.2rem;
+    }
 
+    .main_footer {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+    }
 
-
+    .icons {
+        padding: 2%;
+    }
 }
