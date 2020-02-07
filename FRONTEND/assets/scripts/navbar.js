@@ -1,5 +1,6 @@
 const h = document.getElementById('js-navbar-toggle');
 const m = document.getElementById('mobile');
+const ml = document.getElementById('mob-links');
 
 function openNav() {
 
@@ -9,11 +10,15 @@ function openNav() {
 
 
     } else {
-        
+
         m.style.display = 'none';
 
     }
 }
 h.addEventListener("click", function () {
+    openNav();
+});
+
+ml.addEventListener("click", function () {
     openNav();
 });
