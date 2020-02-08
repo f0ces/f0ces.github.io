@@ -1,24 +1,9 @@
-const h = document.getElementById('js-navbar-toggle');
-const m = document.getElementById('mobile');
-const ml = document.getElementById('mob-links');
+$(document).ready(()=>{
+	$('#js-navbar-toggle').click(()=>{
+		$('#mobile').toggle();
+	});
 
-function openNav() {
-
-    if (m.style.display === "none") {
-        m.style.display = 'block';
-        m.classList.add('mobile');
-
-
-    } else {
-
-        m.style.display = 'none';
-
-    }
-}
-h.addEventListener("click", function () {
-    openNav();
-});
-
-ml.addEventListener("click", function () {
-    openNav();
+	$('.mob-links').click(()=>{
+		$('#mobile').hide();
+	})
 });
