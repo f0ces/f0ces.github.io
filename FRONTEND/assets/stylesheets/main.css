@@ -254,6 +254,7 @@ footer {
 footer .footer-content {
     padding-top: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -277,20 +278,31 @@ footer .widget {
     display: flex;
     flex-direction: row;
     align-content: space-between;
-    padding-top: 40px;
+
     padding-left: 30px;
     padding-bottom: 20px;
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .fa {
     color: black;
+
 }
 
 
+.icons {
+    padding-right: 3%;
+    padding-bottom: 1%;
+    margin-left: auto;
+}
 
-
+.developed {
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
 
 
 
@@ -404,8 +416,8 @@ footer .widget {
     }
 
     .about p {
-        padding: 4px;
-
+        padding: 2%;
+        height: max-content;
         font-size: 1.2em;
         font-weight: bold;
         font-style: italic;
@@ -432,7 +444,6 @@ footer .widget {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 2%;
     }
 
     #contact .footer-content {
@@ -449,7 +460,7 @@ footer .widget {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 4%;
+        padding: 1%;
         font-size: 2em;
         cursor: pointer;
     }
@@ -487,6 +498,11 @@ footer .widget {
         font-size: 1.2rem;
     }
 
+    .icons {
+        display: flex justify-content: space-between;
+        padding-bottom: 5%;
+
+    }
 
     .tm .designation {
         margin-left: -10%;
@@ -498,10 +514,32 @@ footer .widget {
     .main_footer {
         height: max-content;
         display: flex;
+    }
+
+
+
+    .developed {
+        display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
 
     .icons {
-        padding: 2%;
+        padding: 5%;
+        width: 30vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
     }
-}
+
+
+    footer .widget {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        padding-left: 30px;
+        padding-bottom: 20px;
+        font-style: italic;
+        font-size: 1em;
+    }
