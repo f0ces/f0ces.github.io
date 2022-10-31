@@ -365,7 +365,15 @@ footer.mbr-footer {
   left: 0;
   right: 0;
   top: 0;
+  
 }
+/* hide on mobile mbr-background-video-preview */
+@media (max-width: 767px) {
+  #header1-l {
+    display: none !important;
+  }
+}
+
 
 .mbr-overlay {
   background-color: #fff;
